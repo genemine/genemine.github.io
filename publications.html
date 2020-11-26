@@ -8,76 +8,76 @@
         <script src="./js/vue.js"></script>
 </head>
 <body>
-<div id="wholepage">
-        <a id="page-top" name=page-top></a>
-        <div id="header">
-                <div id="buttons">
-                        <div><a v-bind:href="HomeUrl" class="but" id="but2" title="">{{Home}}</a></div>
-                        <div><a href="./publications.html"  class="but" id="but3" title="" style="background-color: #eff9ff; color:#215496; font-size: 20px;border-radius: 5px">{{Publication}}</a></div>
-                        <div><a v-bind:href="ServiceUrl"  class="but" id="but4" title="">{{Service}}</a></div>
-                        <div><a v-bind:href="ResearchUrl" class="but" id="but5" title="" >{{Research}}</a></div>
-                        <div><a href="http://bioinformatics.csu.edu.cn/"  class="but" id="but6" title="" >{{Team}}</a></div>
-                        <div><a v-bind:href="EnglishUrl" class="but" id="but7" @click="click">{{English}}</a></div>
-                </div>
-        </div>
-        <div class="cinfotitle">{{JOURNAL_ARTICLES}}</div>
-        <div class="cinfotext" style="padding-bottom: 30px">
-                •	<u><b>Hong-Dong Li#</b></u>, Cory C.Funk#, Karen McFarland, Eric B.Dammer, Mariet Allen, Minerva M.Carrasquillo, Yona Levties, Paramita Chakrabarty, Jeremy D.Burgess, Xue Wang, Dennis Dickson, Nicholas T.Seyfried, Duc M.Duong, James J.Lah, Steven G.Younkin, Allan I.Levey, Gilbert S.Omenn, Nil¨ufer Ertekin-Taner, Todd E.Golde, Nathan D.Price*, Integrative functional genomic analysis of intron retention in human and mouse brain with Alzheimer’s disease. Alzheimer’s Dement, 2020, doi: 10.1002/alz.12254 (IF=17)
-                <br>•	Yapu Li, Ding Wang, Hongtao Wang, Xin Huang, Yuqi Wen, Bingrui Wang, Changlu Xu,Jie Gao, Jinhua Liu, Jingyuan Tong, Mengge Wang, Pei Su, Sirui Ren, Feng Ma, <u><b>Hong-Dong Li</b></u>, Emery H. Bresnick, Jiaxi Zhou, and Lihong Shi*, A splicing factor switch controls hematopoietic lineage specification of pluripotent stem cells. EMBO Reports, 2020, doi: 10.15252/embr.202050535.
-                <br>•	<u><b>Hong-Dong Li</b></u>, Changhuo Yang, Zhimin Zhang, Mengyun Yang, Fang-Xiang Wu, Gilbert S Omenn, Jianxin Wang*, IsoResolve: Predicting Splice Isoform Functions by Integrating Gene and Isoform-level Features with Domain Adaptation. Bioinformatics, 2020, btaa829
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yunpei Xu, Xiaoshu Zhu, Quan Liu, Gilbert S.Omenn and Jianxin Wang, ClusterMine: A knowledge-integrated clustering approach based on expression profiles of gene sets. J Bioinf Comput Biol, 2020,18, 2040009
-                <br>•	<u><b>Hong-Dong Li</b></u>, Cory C.Funk, Nathan D.Price*, iREAD: a tool for intron retention detection from RNA-seq data. BMC Genomics, 2020, 14, 128
-                <br>•	Xiaoqing Peng, <u><b>Hong-Dong Li</b></u>, Fangxiang Wu, Jianxin Wang*, Identifying the tissues-of-origin of circulating cell-free DNAs is a promising way in noninvasive diagnostics. Briefings in Bioinformatics, 2020, bbaa060
-                <br>•	<u><b><u><b>Hong-Dong Li</b></u></b></u>, Tianjian Bai, Erin Sandford, Margit Burmeister, Yuanfang Guan, BaiHui: cross-species brain-specific network built with hundreds of hand-curated datasets. Bioinformatics, 2018, doi:10.1093/bioinformatics/bty1001
-                <br>•	<u><b>Hong-Dong Li</b></u>*, Qing-Song Xu, Yi-Zeng Liang, libPLS: an integrated library for partial least squares regression and discriminant analysis. Chemom. Intell. Lab. Syst, 176(2018)34-43
-                <br>•	<u><b>Hong-Dong Li</b></u>*, Qing-Song Xu, Yi-Zeng Liang, A phase diagram for gene selection and disease classification, Chemometrics and Intelligent Laboratory Systems, 167(2017)208-213
-                <br>•	Yunpei Xu#, <u><b>Hong-Dong Li</b></u>#  (co-first), Yi Pan, Feng Luo, Jianxin Wang, BioRank: A Similarity Assessment Method for Single Cell Clustering, BIBM, (2018)157-162
-                <br>•	Rebecca Sims, Sven J van der Lee, …, <u><b>Hong-Dong Li</b></u>,…, Sudha Seshadri, Julie Williams, and Gerard D. Schellenberg, Rare coding variants in PLCG2, ABI3 and TREM2 implicate microglial-mediated innate immunity in Alzheimer’s disease, Nat Genet. 2017, 49(9) 1373-1384 (Citation=175)
-                <br>•	Solveig Sieberts, Fan Zhu, Javier García-García, Eli Stahl, Abhishek Pratap, Gaurav Pandey, Dimitrios Pappas, Daniel Aguilar, Bernat Anton, Jaume Bonet, Ridvan Eksi, Oriol Fornés, Emre Guney, …, <u><b>Hong-Dong Li</b></u>, …, Yuanfang Guan, and Lara Mangravite, Crowdsourced assessment of genetic contribution to predicting anti4TNF treatment response in rheumatoid arthritis, Nat Commun, 2016, (7)12406
-                <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Ridvan Eksi, Yang Zhang, Gilbert S. Omenn, and Yuanfang Guan. A network of splice isoforms for the mouse. Sci Rep 6(2015)24507.
-                <br>•	Bharat Panwar, Rajasree Menon, Ridvan Eksi, <u><b>Hong-Dong Li</b></u>, Gilbert S. Omenn, and Yuanfang Guan, Genome-wide Functional Annotation of Human Protein-coding Splice Variants Using Multiple Instance Learning, J Proteome Res, 15(2016)1747–1753
-                <br>•	<u><b>Hong-Dong Li</b></u>, Gilbert S. Omenn, Yuanfang Guan. A proteogenomic approach to understand splice isoform functions through structure and expression-based computational approaches, Briefings in Bioinformatics, 2016, bbv109
-                <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Brandon Govindarajoo, Bharat Panwar, Yang Zhang, Gilbert S. Omenn, and Yuanfang Guan. Functional Networks of Highest-Connected Splice Isoforms: From the Chromosome 17 Human Proteome Project, J Proteome Res, 14(2015)3484-3491
-                <br>•	<u><b>Hong-Dong Li</b></u>, Gilbert S. Omenn, and Yuanfang Guan. Misomine: A Genome-Scale High-Resolution Data Portal of Expression, Function and Networks at the Splice Isoform Level in the Mouse. Database 2015 (2015)
-                <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Gilbert S. Omenn, Yuanfang Guan. The Emerging Era of Genomic Data Integration for Analyzing Splice Isoform Functions, Trends Genet, 30(2014)340-347. Invited review, among the top 25 downloaded articles of this journal in the last 90 days (data based on Aug 6, 2014). (Citation=53)
-                <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Gilbert S. Omenn, Yuanfang Guan. Revisiting the Identification of Canonical Splice Isoforms through Integration of Functional Genomics and Proteomics Evidence, Proteomics, 14(2014)2709-2718.
-                <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Gilbert S. Omenn, Yuanfang Guan. Poster for Revisiting the Identification of Canonical Splice Isoforms through Integration of Functional Genomics and Proteomics Evidence, Journal of Proteome Research, accepted. (The 13th Human Proteome Organization World Conference, winner poster and AB SCIEX C-HPP Young Investigator Award, Madrid, Spain, 2014)
-                <br>•	Fan Zhu, Lihong Shi, <u><b>Hong-Dong Li</b></u>, Ridvan Eksi, James Douglas Engel, Yuanfang Guan, Modeling Dynamic Functional Relationship Networks and Application to Ex Vivo Human Erythroid Differentiation, Bioinformatics, 2014, 30(23): 3325–3333
-                <br>•	Ridvan Eksi*, <u><b>Hong-Dong Li</b></u>* (co-first author), Rajasree Menon , Yuchen Wen, Gilbert S. Omenn, Yuanfang Guan. Systematically Differentiating Functions for Alternatively Spliced Isoforms through Integrating RNA-seq data. PloS Comput Biol 9(2013)e1003314.
-                <br>•	Xu-Xia Long, <u><b>Hong-Dong Li</b></u>, Wei Fan, Qing-Song Xu, Yi-Zeng Liang. A model population analysis method for variable selection based on mutual information. Chemometrics and Intelligent Laboratory Systems 121(2013)75-81
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Xu-Xia Long, Yong-Huan Yun, Qing-Song Xu. The continuity of sample complexity and its relationship to multivariate calibration: A general perspective on first-order calibration of spectral data in analytical chemistry, Chemometrics and Intelligent Laboratory Systems 122 (2013) 23-30
-                <br>•	Xian Chen, <u><b>Hong-Dong Li</b></u>, Fang-Qiu Guo, Jun Yan, Dong-Sheng Cao, Yi-Zeng Liang, QSRR Study on flavor compounds of diverse structures on different columns with the help of new chemometric methods, Chromatographia 76 (5-6), 241-253
-                <br>•	Yong-Huan Yun, <u><b>Hong-Dong Li</b></u>, Leslie R E Wood, Wei Fan, Jia-Jun Wang, Dong-Sheng Cao, Qing-Song Xu, Yi-Zeng Liang, An efficient method of wavelength interval selection based on random frog for multivariate spectral calibration, Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy 111, 31-36 (Citation=111)
-                <br>•	<u><b>Hong-Dong Li</b></u>, Qing-Song Xu and Yi-Zeng Liang, Random Frog: an efficient reversible jump Markov Chain Monte Carlo-like approach for gene selection and disease classification, Analytica Chimica Acta, 740 (2012)20-26
-                <br>•	<u><b>Hong-Dong Li</b></u>, Qing-Song Xu, Wan Zhang and Yi-Zeng Liang, Variable Complementary Network: a novel approach for identifying biomarkers and their mutual associations, Metabolomics, 8(2012)1218-1226
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Model population analysis and its applications in chemical and biological modeling, Trends in Analytical Chemistry, 38 (2012)154-162
-                <br>•	Wei Fan, <u><b>Hong-Dong Li</b></u>, Yang Shan, Hui-Ying Lv, Hua-Xiu Zhang, Yi-Zeng Liang, Classification of vinegar samples based on near infrared spectroscopy combined with wavelength selection, Analytical Methods, 3 (2011) 1872-1876
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Bin-Bin Tan, Bai-Chuan Deng, Chen-Chen Lin, Recipe for uncovering predictive genes using support vector machines based on model population analysis, IEEE/ACM Transactions on Computational Biology and Bioinformatics, 8(2011)1633-1641
-                <br>•	Qin Wang, <u><b>Hong-Dong Li</b></u>, Qing-Song Xu, Yi-Zeng Liang, Noise incorporated subwindow permutation analysis for informative gene selection using support vector machines, Analyst,136(2011) 1456-1463
-                <br>•	<u><b>Hong-Dong Li</b></u>, Mao-Mao Zeng, Bin-Bin Tan, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Recipe for revealing informative metabolites based on model population analysis, Metabolomics, 6(2010) 353-361
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Model population analysis for variable selection, Journal of chemometrics, 24(2010)418-423 (Citation=25)
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Uncover the path from PCR to PLS via elastic component regression, Chemometrics and Intelligent Laboratory Systems, 104(2010)341-346
-                <br>•	Bin-Bin Tan, Yi-Zeng Liang, Lun-Zhao Yi, <u><b>Hong-Dong Li</b></u>, Zhi-Guang Zhou, Xiao-Yan Ji, Jia-Hui Deng, Identification of free fatty acids profiling of type 2 diabetes mellitus and exploring possible biomarkers by GC–MS coupled with chemometrics. Metabolomics 6(2010)219-228
-                <br>•	Mao-Mao Zeng, Yang Xiao, Yi-Zenkyg Liang, Bin Wang, Xian Chen, Dong-Sheng Cao, <u><b>Hong-Dong Li</b></u>, Mei Wang, Zhi-Guang Zhou, Metabolic alterations of impaired fasting glucose by GC/MS based plasma metabolic profiling combined with chemometrics. Metabolomics 6(2010)303-311
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu. Support vector machines and its applications in chemistry. Chemometrics and Intelligent Laboratory Systems 95 (2009) 188-198. (Expanded to a book in English, and the Top 2 Hottest Articles for Chemometrics and Intelligent Laboratory Systems for the last quarter of available data (January-March 2009), the second-most cited among articles published since 2009) (Citation=280)
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Key wavelengths screening using competitive adaptive reweighted sampling method for multivariate calibration, Analytica Chimica Acta 648(2009)77-84 (Citation=487)
-                <br>•	Dong-Sheng Cao, Yi-Zeng Liang, Qing-Song Xu, <u><b><u><b>Hong-Dong Li</b></u></b></u>, Xian Chen, A new strategy of outlier detection for QSAR/QSPR. Journal of Computational Chemistry 31(2010)592-602 (Citation=109)
-                <a href="https://scholar.google.com/citations?user=JrQxdmUAAAAJ&hl=en" style="float:right"> &gt;&gt;<u><b>full list of papers</b></u></a>
-        </div>
-        <div class="cinfotitle">{{BOOKS_AND_CHAPTERS}}</div>
-        <div class="cinfotext">
-                •  Yi-Zeng Liang, Qing-Song Xu, <u><b>Hong-Dong Li</b></u> and Dong-Sheng Cao, Support Vector Machines and their application in chemistry and biotechnology, CRC Press, ISBN 978-1-4398-2128-2, 2011. Invited book.
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang and Qing-Song Xu, Statistical model comparison via model population analysis, an invited chapter for the book Chemometrics in Practical Applications, Edited by Kurt Varmuza, inTech press, ISBN 978-953-308-66-6, 2012
-                <br>•	<u><b>Hong-Dong Li</b></u>, Yang Zhang, Yuanfang Guan, Rajasree Menon, Gilbert S. Omenn, Annotation of Alternatively Spliced Proteins and Transcripts with Protein-Folding Algorithms and Isoform-level Functional Networks, an invited chapter for the book Methods in Molecular Biology, in press, 2016
+     <div id="wholepage">
+             <a id="page-top" name=page-top></a>
+             <div id="header">
+                     <div id="buttons">
+                             <div><a v-bind:href="HomeUrl" class="but" id="but2" title="">{{Home}}</a></div>
+                             <div><a href="./publications.html"  class="but" id="but3" title="" style="background-color: #eff9ff; color:#215496; font-size: 20px;border-radius: 5px">{{Publication}}</a></div>
+                             <div><a v-bind:href="ServiceUrl"  class="but" id="but4" title="">{{Service}}</a></div>
+                             <div><a v-bind:href="ResearchUrl" class="but" id="but5" title="" >{{Research}}</a></div>
+                             <div><a href="http://bioinformatics.csu.edu.cn/"  class="but" id="but6" title="" >{{Team}}</a></div>
+                             <div><a v-bind:href="EnglishUrl" class="but" id="but7" @click="click">{{English}}</a></div>
+                     </div>
+             </div>
+             <div class="cinfotitle">{{JOURNAL_ARTICLES}}</div>
+             <div class="cinfotext" style="padding-bottom: 30px">
+                     •	<u><b>Hong-Dong Li#</b></u>, Cory C.Funk#, Karen McFarland, Eric B.Dammer, Mariet Allen, Minerva M.Carrasquillo, Yona Levties, Paramita Chakrabarty, Jeremy D.Burgess, Xue Wang, Dennis Dickson, Nicholas T.Seyfried, Duc M.Duong, James J.Lah, Steven G.Younkin, Allan I.Levey, Gilbert S.Omenn, Nil¨ufer Ertekin-Taner, Todd E.Golde, Nathan D.Price*, Integrative functional genomic analysis of intron retention in human and mouse brain with Alzheimer’s disease. Alzheimer’s Dement, 2020, doi: 10.1002/alz.12254 (IF=17)
+                     <br>•	Yapu Li, Ding Wang, Hongtao Wang, Xin Huang, Yuqi Wen, Bingrui Wang, Changlu Xu,Jie Gao, Jinhua Liu, Jingyuan Tong, Mengge Wang, Pei Su, Sirui Ren, Feng Ma, <u><b>Hong-Dong Li</b></u>, Emery H. Bresnick, Jiaxi Zhou, and Lihong Shi*, A splicing factor switch controls hematopoietic lineage specification of pluripotent stem cells. EMBO Reports, 2020, doi: 10.15252/embr.202050535.
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Changhuo Yang, Zhimin Zhang, Mengyun Yang, Fang-Xiang Wu, Gilbert S Omenn, Jianxin Wang*, IsoResolve: Predicting Splice Isoform Functions by Integrating Gene and Isoform-level Features with Domain Adaptation. Bioinformatics, 2020, btaa829
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yunpei Xu, Xiaoshu Zhu, Quan Liu, Gilbert S.Omenn and Jianxin Wang, ClusterMine: A knowledge-integrated clustering approach based on expression profiles of gene sets. J Bioinf Comput Biol, 2020,18, 2040009
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Cory C.Funk, Nathan D.Price*, iREAD: a tool for intron retention detection from RNA-seq data. BMC Genomics, 2020, 14, 128
+                     <br>•	Xiaoqing Peng, <u><b>Hong-Dong Li</b></u>, Fangxiang Wu, Jianxin Wang*, Identifying the tissues-of-origin of circulating cell-free DNAs is a promising way in noninvasive diagnostics. Briefings in Bioinformatics, 2020, bbaa060
+                     <br>•	<u><b><u><b>Hong-Dong Li</b></u></b></u>, Tianjian Bai, Erin Sandford, Margit Burmeister, Yuanfang Guan, BaiHui: cross-species brain-specific network built with hundreds of hand-curated datasets. Bioinformatics, 2018, doi:10.1093/bioinformatics/bty1001
+                     <br>•	<u><b>Hong-Dong Li</b></u>*, Qing-Song Xu, Yi-Zeng Liang, libPLS: an integrated library for partial least squares regression and discriminant analysis. Chemom. Intell. Lab. Syst, 176(2018)34-43
+                     <br>•	<u><b>Hong-Dong Li</b></u>*, Qing-Song Xu, Yi-Zeng Liang, A phase diagram for gene selection and disease classification, Chemometrics and Intelligent Laboratory Systems, 167(2017)208-213
+                     <br>•	Yunpei Xu#, <u><b>Hong-Dong Li</b></u>#  (co-first), Yi Pan, Feng Luo, Jianxin Wang, BioRank: A Similarity Assessment Method for Single Cell Clustering, BIBM, (2018)157-162
+                     <br>•	Rebecca Sims, Sven J van der Lee, …, <u><b>Hong-Dong Li</b></u>,…, Sudha Seshadri, Julie Williams, and Gerard D. Schellenberg, Rare coding variants in PLCG2, ABI3 and TREM2 implicate microglial-mediated innate immunity in Alzheimer’s disease, Nat Genet. 2017, 49(9) 1373-1384 (Citation=175)
+                     <br>•	Solveig Sieberts, Fan Zhu, Javier García-García, Eli Stahl, Abhishek Pratap, Gaurav Pandey, Dimitrios Pappas, Daniel Aguilar, Bernat Anton, Jaume Bonet, Ridvan Eksi, Oriol Fornés, Emre Guney, …, <u><b>Hong-Dong Li</b></u>, …, Yuanfang Guan, and Lara Mangravite, Crowdsourced assessment of genetic contribution to predicting anti4TNF treatment response in rheumatoid arthritis, Nat Commun, 2016, (7)12406
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Ridvan Eksi, Yang Zhang, Gilbert S. Omenn, and Yuanfang Guan. A network of splice isoforms for the mouse. Sci Rep 6(2015)24507.
+                     <br>•	Bharat Panwar, Rajasree Menon, Ridvan Eksi, <u><b>Hong-Dong Li</b></u>, Gilbert S. Omenn, and Yuanfang Guan, Genome-wide Functional Annotation of Human Protein-coding Splice Variants Using Multiple Instance Learning, J Proteome Res, 15(2016)1747–1753
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Gilbert S. Omenn, Yuanfang Guan. A proteogenomic approach to understand splice isoform functions through structure and expression-based computational approaches, Briefings in Bioinformatics, 2016, bbv109
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Brandon Govindarajoo, Bharat Panwar, Yang Zhang, Gilbert S. Omenn, and Yuanfang Guan. Functional Networks of Highest-Connected Splice Isoforms: From the Chromosome 17 Human Proteome Project, J Proteome Res, 14(2015)3484-3491
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Gilbert S. Omenn, and Yuanfang Guan. Misomine: A Genome-Scale High-Resolution Data Portal of Expression, Function and Networks at the Splice Isoform Level in the Mouse. Database 2015 (2015)
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Gilbert S. Omenn, Yuanfang Guan. The Emerging Era of Genomic Data Integration for Analyzing Splice Isoform Functions, Trends Genet, 30(2014)340-347. Invited review, among the top 25 downloaded articles of this journal in the last 90 days (data based on Aug 6, 2014). (Citation=53)
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Gilbert S. Omenn, Yuanfang Guan. Revisiting the Identification of Canonical Splice Isoforms through Integration of Functional Genomics and Proteomics Evidence, Proteomics, 14(2014)2709-2718.
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Rajasree Menon, Gilbert S. Omenn, Yuanfang Guan. Poster for Revisiting the Identification of Canonical Splice Isoforms through Integration of Functional Genomics and Proteomics Evidence, Journal of Proteome Research, accepted. (The 13th Human Proteome Organization World Conference, winner poster and AB SCIEX C-HPP Young Investigator Award, Madrid, Spain, 2014)
+                     <br>•	Fan Zhu, Lihong Shi, <u><b>Hong-Dong Li</b></u>, Ridvan Eksi, James Douglas Engel, Yuanfang Guan, Modeling Dynamic Functional Relationship Networks and Application to Ex Vivo Human Erythroid Differentiation, Bioinformatics, 2014, 30(23): 3325–3333
+                     <br>•	Ridvan Eksi*, <u><b>Hong-Dong Li</b></u>* (co-first author), Rajasree Menon , Yuchen Wen, Gilbert S. Omenn, Yuanfang Guan. Systematically Differentiating Functions for Alternatively Spliced Isoforms through Integrating RNA-seq data. PloS Comput Biol 9(2013)e1003314.
+                     <br>•	Xu-Xia Long, <u><b>Hong-Dong Li</b></u>, Wei Fan, Qing-Song Xu, Yi-Zeng Liang. A model population analysis method for variable selection based on mutual information. Chemometrics and Intelligent Laboratory Systems 121(2013)75-81
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Xu-Xia Long, Yong-Huan Yun, Qing-Song Xu. The continuity of sample complexity and its relationship to multivariate calibration: A general perspective on first-order calibration of spectral data in analytical chemistry, Chemometrics and Intelligent Laboratory Systems 122 (2013) 23-30
+                     <br>•	Xian Chen, <u><b>Hong-Dong Li</b></u>, Fang-Qiu Guo, Jun Yan, Dong-Sheng Cao, Yi-Zeng Liang, QSRR Study on flavor compounds of diverse structures on different columns with the help of new chemometric methods, Chromatographia 76 (5-6), 241-253
+                     <br>•	Yong-Huan Yun, <u><b>Hong-Dong Li</b></u>, Leslie R E Wood, Wei Fan, Jia-Jun Wang, Dong-Sheng Cao, Qing-Song Xu, Yi-Zeng Liang, An efficient method of wavelength interval selection based on random frog for multivariate spectral calibration, Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy 111, 31-36 (Citation=111)
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Qing-Song Xu and Yi-Zeng Liang, Random Frog: an efficient reversible jump Markov Chain Monte Carlo-like approach for gene selection and disease classification, Analytica Chimica Acta, 740 (2012)20-26
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Qing-Song Xu, Wan Zhang and Yi-Zeng Liang, Variable Complementary Network: a novel approach for identifying biomarkers and their mutual associations, Metabolomics, 8(2012)1218-1226
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Model population analysis and its applications in chemical and biological modeling, Trends in Analytical Chemistry, 38 (2012)154-162
+                     <br>•	Wei Fan, <u><b>Hong-Dong Li</b></u>, Yang Shan, Hui-Ying Lv, Hua-Xiu Zhang, Yi-Zeng Liang, Classification of vinegar samples based on near infrared spectroscopy combined with wavelength selection, Analytical Methods, 3 (2011) 1872-1876
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Bin-Bin Tan, Bai-Chuan Deng, Chen-Chen Lin, Recipe for uncovering predictive genes using support vector machines based on model population analysis, IEEE/ACM Transactions on Computational Biology and Bioinformatics, 8(2011)1633-1641
+                     <br>•	Qin Wang, <u><b>Hong-Dong Li</b></u>, Qing-Song Xu, Yi-Zeng Liang, Noise incorporated subwindow permutation analysis for informative gene selection using support vector machines, Analyst,136(2011) 1456-1463
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Mao-Mao Zeng, Bin-Bin Tan, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Recipe for revealing informative metabolites based on model population analysis, Metabolomics, 6(2010) 353-361
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Model population analysis for variable selection, Journal of chemometrics, 24(2010)418-423 (Citation=25)
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Uncover the path from PCR to PLS via elastic component regression, Chemometrics and Intelligent Laboratory Systems, 104(2010)341-346
+                     <br>•	Bin-Bin Tan, Yi-Zeng Liang, Lun-Zhao Yi, <u><b>Hong-Dong Li</b></u>, Zhi-Guang Zhou, Xiao-Yan Ji, Jia-Hui Deng, Identification of free fatty acids profiling of type 2 diabetes mellitus and exploring possible biomarkers by GC–MS coupled with chemometrics. Metabolomics 6(2010)219-228
+                     <br>•	Mao-Mao Zeng, Yang Xiao, Yi-Zenkyg Liang, Bin Wang, Xian Chen, Dong-Sheng Cao, <u><b>Hong-Dong Li</b></u>, Mei Wang, Zhi-Guang Zhou, Metabolic alterations of impaired fasting glucose by GC/MS based plasma metabolic profiling combined with chemometrics. Metabolomics 6(2010)303-311
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu. Support vector machines and its applications in chemistry. Chemometrics and Intelligent Laboratory Systems 95 (2009) 188-198. (Expanded to a book in English, and the Top 2 Hottest Articles for Chemometrics and Intelligent Laboratory Systems for the last quarter of available data (January-March 2009), the second-most cited among articles published since 2009) (Citation=280)
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang, Qing-Song Xu, Dong-Sheng Cao, Key wavelengths screening using competitive adaptive reweighted sampling method for multivariate calibration, Analytica Chimica Acta 648(2009)77-84 (Citation=487)
+                     <br>•	Dong-Sheng Cao, Yi-Zeng Liang, Qing-Song Xu, <u><b><u><b>Hong-Dong Li</b></u></b></u>, Xian Chen, A new strategy of outlier detection for QSAR/QSPR. Journal of Computational Chemistry 31(2010)592-602 (Citation=109)
+                     <a href="https://scholar.google.com/citations?user=JrQxdmUAAAAJ&hl=en" style="float:right"> &gt;&gt;<u><b>full list of papers</b></u></a>
+             </div>
+             <div class="cinfotitle">{{BOOKS_AND_CHAPTERS}}</div>
+             <div class="cinfotext">
+                     •  Yi-Zeng Liang, Qing-Song Xu, <u><b>Hong-Dong Li</b></u> and Dong-Sheng Cao, Support Vector Machines and their application in chemistry and biotechnology, CRC Press, ISBN 978-1-4398-2128-2, 2011. Invited book.
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yi-Zeng Liang and Qing-Song Xu, Statistical model comparison via model population analysis, an invited chapter for the book Chemometrics in Practical Applications, Edited by Kurt Varmuza, inTech press, ISBN 978-953-308-66-6, 2012
+                     <br>•	<u><b>Hong-Dong Li</b></u>, Yang Zhang, Yuanfang Guan, Rajasree Menon, Gilbert S. Omenn, Annotation of Alternatively Spliced Proteins and Transcripts with Protein-Folding Algorithms and Isoform-level Functional Networks, an invited chapter for the book Methods in Molecular Biology, in press, 2016
 
-        </div>
-        <div class="cinfotitle">{{INTERNATIONAL_CONFERENCE_PAPER}}</div>
-        <div class="cinfotext">
-                •  <u><b>Hong-Dong Li</b></u>, Bharat Panwar, Rajasree Menon, Yuanfang Guan, Gilbert Omenn, Genome-scale Prediction of Human Splice Isoform Functions and Functional Networks, US HUPO 11th Annual Conference, Tempe, 2015 (selected for a talk).
-                <br>•	Rajasree Menon, Yuanfang Guan, <u><b>Hong-Dong Li</b></u>, Ridvan Eksi, Michael Snyder, William S Hancock, Gilbert S Omenn, US HUPO 10th Annual Conference, Seattle, 2014.
-        </div>
-</div>
-</div>
+             </div>
+             <div class="cinfotitle">{{INTERNATIONAL_CONFERENCE_PAPER}}</div>
+             <div class="cinfotext">
+                     •  <u><b>Hong-Dong Li</b></u>, Bharat Panwar, Rajasree Menon, Yuanfang Guan, Gilbert Omenn, Genome-scale Prediction of Human Splice Isoform Functions and Functional Networks, US HUPO 11th Annual Conference, Tempe, 2015 (selected for a talk).
+                     <br>•	Rajasree Menon, Yuanfang Guan, <u><b>Hong-Dong Li</b></u>, Ridvan Eksi, Michael Snyder, William S Hancock, Gilbert S Omenn, US HUPO 10th Annual Conference, Seattle, 2014.
+             </div>
+     </div>
+     </div>
 </body>
 </html>
 <script>
