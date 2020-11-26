@@ -1,47 +1,47 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0050)http://bioinformatics.csu.edu.cn/resources/personal/limin/index.html -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<meta http-equiv="keywords" content="李洪东,中南大学,生物信息学">
-<link type="text/css" rel="stylesheet" href="hdl.css">
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<title>Service</title>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service</title>
+    <link href="./css/hdl.css" type="text/css" rel="stylesheet" >
+    <link href="./css/styles.css" type="text/css" rel="stylesheet">
+    <script src="./js/vue.js"></script>
 </head>
 <body>
-
 <div id="wholepage">
- <div id="header">
-                    
-                    <div id="buttons" name="学术兼职">
-						<div><a href="index.html" class="but" id="but2" title="">Home</a></div>
-                        <div><a href="./publications.html"  class="but" id="but3" title="">Publication</a></div>
-                        <div><a href="./service_en.html"  class="but" id="but4" title="" style="background-color: #eff9ff; color:#215496; font-size: 20px;border-radius: 5px">Service</a></div>
-						<div><a href="./research_en.html"  class="but" id="but4" title="" >Research</a></div>
-                        <div><a href="http://bioinformatics.csu.edu.cn/"  class="but" id="but4" title="" >Team</a></div>
-                        <div><a href="index_ch.html" class="but" id="but5" title="">中文</a></div>
-
-                    </div>
-</div>
-<!--
-<div id="version"><a href="http://bioinformatics.csu.edu.cn/resources/personal/limin/index_en.html"> &gt;&gt;EnglishVersion</a></div>
--->
-
-<div id="cinfo">
-
- 	<div class="cinfotitle">JOURNAL REFEREE</div>
-    <div class="cinfotext">
-                •	PLoS Genetics.
+    <div id="header">
+        <div id="buttons" name="学术兼职">
+            <div><a href="./index.html" class="but" id="but2" title="">Home</a></div>
+            <div><a href="./publications.html"  class="but" id="but3" title="">Publication</a></div>
+            <div><a href="./service_en.html"  class="but" id="but4" title="" style="background-color: #eff9ff; color:#215496; font-size: 20px;border-radius: 5px">Service</a></div>
+            <div><a href="./research_en.html"  class="but" id="but5" title="" >Research</a></div>
+            <div><a href="http://bioinformatics.csu.edu.cn/"  class="but" id="but6" title="" >Team</a></div>
+            <div><a href="./index_ch.html" class="but" id="but7" title="" @click="click">中文</a></div>
+        </div>
+    </div>
+    <div id="cinfo">
+        <div class="cinfotitle">JOURNAL REFEREE</div>
+        <div class="cinfotext">
+            •	PLoS Genetics.
             <br>•	Current Metabolomics
             <br>•	Bioinformatics
             <br>•	Chemometrics and Intelligent Laboratory Systems.
             <br>•	Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy.
+        </div>
     </div>
 </div>
-
-<p>
-    <a href="http://validator.w3.org/check?uri=referer"><img src="valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88"></a>
-</p>
-</div>
-
-
-</body></html>
+</body>
+</html>
+<script>
+    var vue = new Vue({
+        el: '#wholepage',
+        methods: {
+            click(){
+                localStorage.setItem("isEnglish" , localStorage.getItem("isEnglish") === '0' ? '1':'0');
+            },
+            created: function () {
+                localStorage.setItem("isEnglish" , '0');
+            }
+        }
+    })
+</script>
